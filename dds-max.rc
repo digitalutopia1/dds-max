@@ -1,0 +1,143 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "dds-maxrc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include <windows.h>
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "dds-maxrc.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include <windows.h>\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "#include ""veroverrides.h""\r\n"
+    "#include ""maxversion.r""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DDS_ABOUT DIALOG DISCARDABLE  0, 0, 166, 58
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "About DDS Image File I/O"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,108,39,50,14
+    RTEXT           "DDS File I/O Module",IDC_STATIC,37,9,118,9
+    RTEXT           "Version 1.0",IDC_STATIC,37,19,118,9
+    GROUPBOX        "",IDC_STATIC,8,2,151,31
+END
+
+IDD_DDS_CONFIG DIALOG DISCARDABLE  0, 0, 177, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DDS Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,38,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,50,50,14
+    CONTROL         "8 Bit Optimized palette  (256 Colors)",IDC_DDS_PALETTE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,29,15,128,10
+    CONTROL         "RGB 24 bit  (16.7 Million Colors)",IDC_DDS_RGB24,"Button",
+                    BS_AUTORADIOBUTTON,29,27,125,10
+    GROUPBOX        "Colors",-1,6,2,164,43,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DDS_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DDS                 "DDS"
+    IDS_DDS_IO           "DDS I/O"
+    IDS_DDS_FILE            "DDS Image File"
+    IDS_UNSUPPORTED         "Unsupported DDS Image File"
+    IDS_CONVERT_ERROR       "Error converting bitmap"
+    IDS_LIBDESCRIPTION      "DDS File I/O (Autodesk)"
+    IDS_DDSIO_INTERFACE     "DDS File Interface"
+    IDS_DDSIO_GETBITMAPTYPE "Get DDS Type"
+    IDS_DDSIO_SETBITMAPTYPE "Set DDS Type"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+#include "veroverrides.h"
+#include "MAXVERSION.R"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
